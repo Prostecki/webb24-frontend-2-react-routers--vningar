@@ -9,6 +9,7 @@ import Footer from "./components/Footer";
 function App() {
   const users = [
     {
+      id: 1,
       userName: "CaptainFrisk",
       name: "Test Testsson",
       age: 99,
@@ -18,6 +19,7 @@ function App() {
       },
     },
     {
+      id: 2,
       userName: "SpaceAce",
       name: "Anna Andersson",
       age: 25,
@@ -27,6 +29,7 @@ function App() {
       },
     },
     {
+      id: 3,
       userName: "PixelWizard",
       name: "Karl Karlsson",
       age: 42,
@@ -36,6 +39,7 @@ function App() {
       },
     },
     {
+      id: 4,
       userName: "CodeNinja",
       name: "Maria Pettersson",
       age: 33,
@@ -45,6 +49,7 @@ function App() {
       },
     },
     {
+      id: 5,
       userName: "ByteBuster",
       name: "Olof Olsson",
       age: 28,
@@ -63,7 +68,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home users={users} />} />
         <Route path="/newuser" element={<NewUser />} />
-        <Route path="/profile" element={<Profile />} />
+        <Route path="/profile/:id" element={<Profile />} />
       </Routes>
       <Footer />
     </div>
