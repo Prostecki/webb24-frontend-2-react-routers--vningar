@@ -1,11 +1,9 @@
-import { useState } from "react";
 import Form from "../components/Form";
-export default function NewUser() {
-  const [user, setUser] = useState([]);
+export default function NewUser({ users, setUsers }) {
   return (
     <div>
       <h1 className="text-5xl">Please add a new user here..</h1>
-      <Form />
+      <Form users={users} setUsers={setUsers} />
     </div>
   );
 }

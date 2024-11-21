@@ -7,12 +7,12 @@ export default function Header() {
         <Link className="hover:text-red-300 transition duration-150" to="/">
           Home
         </Link>
-        <Link
+        {/* <Link
           className="hover:text-red-300 transition duration-150"
           to="/profile"
         >
           Profile
-        </Link>
+        </Link> */}
         <Link
           className="hover:text-red-300 transition duration-150"
           to="/newuser"
